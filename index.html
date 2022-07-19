@@ -1,0 +1,832 @@
+<!doctype html>
+<html>
+<head>
+ <title>MOVIE BOOKING</title>
+ <style>
+ body
+{
+ background-image:url("https://img.freepik.com/free-photo/fuzzy-colorful-bokeh-background-with-blurred-defocused-lights_23-2148055621.jpg?size=626&ext=jpg");
+ background-color:white;
+ background-size:cover;
+ background-position:center;
+ background-repeat:no-repeat;
+ width:1336px;
+ height:2900px;
+}
+#header
+{
+ background-color:black;
+ width:1100px;
+ height:100px;
+ color:rgb(247,247,247);
+ text-align:center;
+ padding:2px;
+ margin-left:auto;
+ margin-right:auto;
+}	
+#container
+{
+ background-color:black;
+ width:1110px;
+ height:980px;
+ background-position:center;
+ margin-left:auto;
+ margin-right:auto;
+}
+#mcontain
+{
+ background-color:black;	
+ width:980px;
+ height:850px;
+ margin-left:auto;
+ margin-right:auto;
+ padding:5px;
+}	
+#topbar
+{
+ padding:5px;
+ background-image:url("https://img.freepik.com/free-photo/fuzzy-colorful-bokeh-background-with-blurred-defocused-lights_23-2148055621.jpg?size=626&ext=jpg");	 
+  background-repeat:no-repeat;
+  background-size:cover;
+ width:940px;
+ height:35px; 
+ margin-left:auto;
+ margin-right:auto;
+}
+.image
+{
+ width:150px;
+ border:3px solid;
+ border-image:url("https://img.freepik.com/free-photo/fuzzy-colorful-bokeh-background-with-blurred-defocused-lights_23-2148055621.jpg?size=626&ext=jpg") 30 round; 
+ transition:0.5s;
+ opacity:1;
+ transition: width 0.125s;
+}	
+.image:hover
+{
+  opacity:0.75;	
+  width:155px;
+}	
+#main
+{
+  background-image:url("https://img.freepik.com/free-photo/fuzzy-colorful-bokeh-background-with-blurred-defocused-lights_23-2148055621.jpg?size=626&ext=jpg");	 
+  background-repeat:no-repeat;
+  background-size:cover;  
+  width:900px;
+  height:700px; 
+  margin-left:auto;
+  margin-right:auto;  
+}
+table
+{
+ border-collapse:collapse;
+ margin-left:auto; 
+ margin-right:auto; 
+}
+tr,td
+{
+  
+  border-color:white;
+  text-align:center;
+  height:285px;
+  border-radius:20px;  
+}
+td:nth-child(odd)
+{
+background-color:black; width:180px; 
+}	
+td:nth-child(even)
+{
+ width:120px; 
+}
+#button
+{
+  background-color:black;
+  border:none;
+  border-radius:18px;
+  padding:10px 45px;
+  color:white;
+  opacity:1;
+  transition:0.2s;
+  font-size:15px;
+}
+#button:hover
+{
+ opacity:0.75;	
+}
+.topbar
+{
+  background-color:black;
+  color:white;
+  border:none;
+  border-radius:25px;
+  padding:8px 16px;  
+}
+#tbutton
+{
+ background-color:black;
+ border:none;
+ border-radius:25px;
+}	
+#tbutton:hover
+{
+ background-color:orange;	
+}	
+option
+{
+  background-color:black;
+  color:white;
+  border:none;
+  padding:4px 8px;
+}
+#bottom
+{
+ height:30px;
+ width:940px;
+ padding:5px;
+ text-align:center;
+ background-color:white; margin-left:auto;
+ margin-right:auto; 
+ background-repeat:no-repeat;
+ background-size:cover;    
+}
+#summary
+{
+ background-color:black;
+ width:1110px;
+ height:600px;
+ background-position:center;
+ margin-left:auto;
+ margin-right:auto;	
+}
+#leftside
+{
+  background-image:url("https://img.freepik.com/free-photo/fuzzy-colorful-bokeh-background-with-blurred-defocused-lights_23-2148055621.jpg?size=626&ext=jpg");
+  padding:5px;
+  height:340px;
+  width:280px;  
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:auto;
+}	
+#pic
+{ 
+  background-image:url("https://nypost.com/wp-content/uploads/sites/2/2020/03/sized-movie-theaters-close.jpg?quality=80&strip=all&w=618&h=410&crop=1");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  clear:both;
+  text-align:center;  
+  padding:15px;
+  width:200px;
+  height:300px;
+  border-radius:25px;
+  margin-left:auto;
+  margin-right:auto;  
+}	
+#rightside
+{
+  background-image:url("https://img.freepik.com/free-photo/fuzzy-colorful-bokeh-background-with-blurred-defocused-lights_23-2148055621.jpg?size=626&ext=jpg");
+  width:800px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:340px;  
+  padding:5px;
+  text-align:center;
+}
+#mcon
+{
+  height:380px; 	
+}	
+#moinfo
+{
+  clear:both;
+  background-image:url("https://cdn.hipwallpaper.com/i/22/52/1BI8CK.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  text-align:left;
+  color:white;
+  float:left;
+  padding:10px;
+  border-radius:30px;
+  width:480px;
+  height:310px;
+  margin-left:auto;
+  margin-right:auto;    
+}	
+#udetail
+{
+ margin-left:auto;
+ margin-right:auto;
+ text-align:left;
+ padding:5px;
+ background-image:url("https://img.freepik.com/free-photo/fuzzy-colorful-bokeh-background-with-blurred-defocused-lights_23-2148055621.jpg?size=626&ext=jpg");
+ background-repeat:no-repeat;
+ background-size:cover;
+ background-position:center;
+ height:360px;
+ width:1000px; 
+}
+#mgal
+{
+ float:right;
+ margin-left:auto;
+ margin-right:auto;
+ text-align:center;
+ padding:10px;
+ color:white;
+ border-radius:30px;
+ background-color:black;
+ height:310px;
+ width:277px; 
+}
+#ldet
+{
+ background-color:black;	
+ float:left;
+ margin-left:auto;
+ margin-right:auto;
+ text-align:left;
+ padding-left:60px;
+ color:white;
+ height:280px;
+ width:315px;  
+}	
+#rdet
+{
+ background-image:url("https://media.istockphoto.com/photos/popcorn-and-movie-ticket-on-white-background-for-cinema-concept-picture-id498976425?k=6&m=498976425&s=170667a&w=0&h=Q5Wt--wBfJ94Ls_aGOSrtVrOENVz0TlXCfjLLpz6dPw=");	
+ background-repeat:no-repeat;
+ background-size:cover;
+ background-position:center;
+ margin-left:auto;
+ float:right;
+ margin-right:auto;
+ text-align:left;
+ color:black;
+ height:350px;
+ width:250px;  
+}	
+#cen
+{
+ background-color:black;
+ margin-left:auto;
+ margin-right:auto; 
+ height:280px;
+ color:white;
+ width:480px; 
+}	
+#sbutton
+{
+  background-color:black;
+  border:none;
+  color:white;  
+}	
+#base
+{
+ background-color:black;
+ width:740px;
+ text-align:center;
+ height:80px;
+ color:white; 
+}	
+#bbutton
+{
+  background-color:black;
+  border:none;
+  border-radius:18px;
+  padding:7px 30px;
+  color:white;
+  opacity:1;
+  transition:0.2s;
+  font-size:15px;
+}
+#bbutton:hover
+{
+ opacity:0.75;	
+}
+#booking
+{
+ background-color:white;
+ height:400px;
+ margin-left:auto;
+ margin-right:auto;
+ width:1000px; 
+}	
+.numb
+{
+  float:right;
+  width:35px;   
+  height:10px;
+  padding:3px;
+  border:1px solid;
+  border-color:rgb(247,247,247);
+  background-color:none;
+  border-collapse:collapse;
+}
+.numbr
+{
+  float:right;
+  width:35px;   
+  height:10px;
+  padding:3px;
+  border:1px solid;
+  border-color:rgb(247,247,247);
+  background-color:none;
+  border-collapse:collapse;
+}
+.numb1
+{
+  width:30px;
+  height:12px;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}	
+.numbn
+{
+  float:left;	
+  width:40px;   
+  height:12px;
+  border-collapse:collapse;
+}
+	
+ </style>
+ <script>
+ 
+    var a=0;
+	var j=0;
+	var x=-6;
+	function check(c)
+	{
+	  var nam=document.getElementById("name").value;
+	  var mailid=document.getElementById("mail").value;
+	  var num=document.getElementById("num").value;
+	  var dat=document.getElementById("date").value;
+	  var tim=document.getElementById("time").value;
+	  var mov=document.getElementById("bookm").value;
+	  var tic=document.getElementById("ticket").value;
+	  var text=/^[a-zA-Z\s.]+$/;
+	  var tex=/^[a-zA-Z0-9@.]+$/;
+	  var n=/^[0-9]{10}$/;
+	  
+	  if(c==1)
+	  if(text.test(nam)&&nam.length>5)
+	    {x=x+1;document.getElementById("m1").innerHTML="";}
+	  else 
+        {x=x-1;document.getElementById("m1").innerHTML="PLEASE ENTER A VALID NAME";document.getElementById("m1").style.color="red";}	  
+      
+      if(c==2)	  
+      if(tex.test(mailid)&&mailid.length>5)
+	    {x=x+1;document.getElementById("m2").innerHTML="";}
+	  else 
+        {x=x-1;document.getElementById("m2").innerHTML="PLEASE ENTER A VALID MAIL ID";document.getElementById("m2").style.color="red";}
+	
+      if(c==3)	
+ 	  if(n.test(num)&&num.length==10)
+	   {x=x+1;document.getElementById("m3").innerHTML="";}
+	  else 
+        {x=x-1;document.getElementById("m3").innerHTML="PLEASE ENTER A VALID NUMBER";document.getElementById("m3").style.color="red";}	
+	
+      if(c==6)	
+      if(mov>0)
+        {x=x+1;document.getElementById("m6").innerHTML="";}	
+      else 
+        {x=x-1;document.getElementById("m6").innerHTML="PLEASE SELECT A MOVIE";document.getElementById("m6").style.color="red";}
+	
+      if(c==7)	
+      if(tic!=0&&tic<=10)
+        {x=x+1;document.getElementById("m7").innerHTML="";document.getElementById("trate").value=tic*200;}
+      else 
+        {x=x-1;document.getElementById("m7").innerHTML="PLEASE ENTER NO OF TICKETS MAX:10";document.getElementById("trate").value="";document.getElementById("m7").style.color="red";document.getElementById("ticket").value="";}	
+
+      if(c==5)		
+      if(tim>0&&dat!="")
+        {x=x+1;document.getElementById("m5").innerHTML="";}
+      else 
+	    if(dat=="")
+        {x=x-1;document.getElementById("m5").innerHTML="PLEASE SELECT SHOW DATE";document.getElementById("m5").style.color="red";}
+        else
+        {x=x-1;document.getElementById("m5").innerHTML="PLEASE SELECT SHOW TIME";document.getElementById("m5").style.color="red";}
+		
+      if(nam.length>5&&mailid.length>5&&num.length==10&&mov>0&&tic!=0&&tim>0&&dat!="")
+        a=1;	  
+	}
+	
+    function movied(i)
+	{
+	 document.getElementById("gal").innerHTML="Movie Gallery"; 
+	 document.getElementById("mogal").innerHTML="Movie CLIPS";
+	 document.getElementById("dup1").src="";
+	 if(i==1)
+	 {
+	   document.getElementById("sum").src="https://m.media-amazon.com/images/M/MV5BZGFjOTRiYjgtYjEzMS00ZjQ2LTkzY2YtOGQ0NDI2NTVjOGFmXkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_.jpg"      
+	   document.getElementById("minfo").innerHTML="A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.<br><br>Director: Christopher Nolan<br>Writer: Christopher Nolan<br>Stars: Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page"
+	   document.getElementById("gal1").src="https://cdn.collider.com/wp-content/uploads/2020/06/inception-leonardo-dicaprio-ken-watanabe.jpg";
+	   document.getElementById("gal2").src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1234,w_2193,x_0,y_85/f_auto,q_auto,w_1100/v1594523147/shape/mentalfloss/61038-warner_bros1.jpg";
+	   document.getElementById("gal3").src="https://cdn.images.express.co.uk/img/dynamic/36/590x/Inception-movie-meaning-end-1197182.jpg?r=1572363526520";
+	   document.getElementById("gal4").src="https://www.altfg.com/film/wp-content/uploads/images/inception-leonardo-di-caprio.jpg.webp";
+	   document.getElementById("vgal").src="https://youtube.com/embed/YoHD9XEInc0?controls=1";
+	   j=1;
+	 }
+	 if(i==2)
+	 {
+	   document.getElementById("sum").src="https://pics.filmaffinity.com/Interstellar-366875261-large.jpg"      
+	   document.getElementById("minfo").innerHTML="A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.<br><br>Director: Christopher Nolan<br>Writers: Jonathan Nolan, Christopher Nolan<br>Stars: Matthew McConaughey, Anne Hathaway, Jessica Chastain"
+	   document.getElementById("gal1").src="https://cdn.onebauer.media/one/empire-tmdb/films/157336/images/xu9zaAevzQ5nnrsXN6JcahLnG4i.jpg?quality=50&width=1800&ratio=16-9&resizeStyle=aspectfill&format=jpg";
+	   document.getElementById("gal2").src="https://a.ltrbxd.com/resized/sm/upload/lu/pk/m0/re/interstellar-1200-1200-675-675-crop-000000.jpg?k=b51324264c";
+	   document.getElementById("gal3").src="https://heavyng.com/wp-content/uploads/2019/12/Interstellar.jpg";
+	   document.getElementById("gal4").src="https://m.media-amazon.com/images/M/MV5BNjM5OTQzMTg4N15BMl5BanBnXkFtZTgwOTgyMjM0NTE@._V1_CR0,59,640,360_AL_UX477_CR0,0,477,268_AL_.jpg";
+	   document.getElementById("vgal").src="https://youtube.com/embed/zSWdZVtXT7E?controls=1";
+	   j=2;
+	 }
+	 if(i==3)
+	 {
+	   document.getElementById("sum").src="https://miro.medium.com/max/1200/1*--ca01rvJuqIwFAWAKoqqQ.jpeg"
+	   document.getElementById("minfo").innerHTML="In 1954, a U.S. Marshal investigates the disappearance of a murderer who escaped from a hospital for the criminally insane.<br><br>Director: Martin Scorsese<br>Writers: Laeta Kalogridis (screenplay), Dennis Lehane (novel)<br>Stars: Leonardo DiCaprio, Emily Mortimer, Mark Ruffalo "
+	   document.getElementById("gal1").src="https://www.slashfilm.com/wp/wp-content/images/Shutter-Island-Revisited.jpg";
+	   document.getElementById("gal2").src="https://static01.nyt.com/images/2010/02/19/movies/19shutter_ca1/19shutter_ca1-articleLarge.jpg?quality=75&auto=webp&disable=upscale";
+	   document.getElementById("gal3").src="https://lisacerezo.com/wp-content/uploads/shutter-island-leonardo-dicaprio.jpg";
+	   document.getElementById("gal4").src="https://www.agent.media/wp-content/uploads/2016/06/Hats-00-Featured-ShutterIsland-LeoDiCaprio.jpg";
+	   document.getElementById("vgal").src="https://youtube.com/embed/v8yrZSkKxTA?controls=1";
+	   j=3
+	 }
+     if(i==4)
+	 {
+	   document.getElementById("sum").src="https://m.media-amazon.com/images/M/MV5BY2FiMTFmMzMtZDI2ZC00NDQyLWExYTUtOWNmZWM1ZDg5YjVjXkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_.jpg"
+	   document.getElementById("minfo").innerHTML="Vikram, a no-nonsense police officer, accompanied by Simon, his partner, is on the hunt to capture Vedha, a smuggler and a murderer. Vedha tries to change Vikram's life, which leads to a conflict.<br><br>Directors: Gayatri, Pushkar<br>Writers: Manikandan (dialogue by), Gayatri<br>Stars: Madhavan, Vijay Sethupathi, Shraddha Srinath"
+	   document.getElementById("gal1").src="https://s01.sgp1.digitaloceanspaces.com/large/842793-62312-asgcvfevxx-1499251806.JPG";
+	   document.getElementById("gal2").src="https://cdn.telanganatoday.com/wp-content/uploads/2018/03/vk-n.jpg";
+	   document.getElementById("gal3").src="https://1847884116.rsc.cdn77.org/tamil/news/vikramvedha_17717t.jpg";
+	   document.getElementById("gal4").src="https://s01.sgp1.digitaloceanspaces.com/large/910222-79535-yvnndgbytt-1516340943.jpeg";
+	   document.getElementById("vgal").src="https://youtube.com/embed/1sVr-uWZPjE?controls=1";
+	   j=4
+	 }
+	 if(i==5)
+	 {
+	   document.getElementById("sum").src="https://www.movienewsletters.net/photos/297465R1.jpg"
+	   document.getElementById("minfo").innerHTML="A jealous clerk secretly switches his newborn son with his millionaire friend's temporarily stillborn son.<br><br>Director: Trivikram Srinivas<br>Writer: Trivikram Srinivas<br>Stars: Allu Arjun, Pooja Hegde, Tabu"
+	   document.getElementById("gal1").src="https://images.indianexpress.com/2020/01/Ala-Vaikunthapurramuloo-1200.jpg";
+	   document.getElementById("gal2").src="https://www.mirchi9.com/wp-content/uploads/2019/12/Ala-Vaikunthapurramuloo-ButtaBomma.jpg";
+	   document.getElementById("gal3").src="https://images.indianexpress.com/2019/12/Ala-Vaikunthapurramuloo-759.jpg";
+	   document.getElementById("gal4").src="https://images.thequint.com/thequint/2020-01/a7afed82-3493-47b0-ae80-41986249e4e7/3.jpg";
+	   document.getElementById("vgal").src="https://youtube.com/embed/SkENAjfVoNI?controls=1";
+	   j=5
+	 }
+	 if(i==6)
+	 {
+	   document.getElementById("sum").src="https://cdn.cinematerial.com/p/297x/v4uyly0w/ratsasan-indian-movie-poster-md.jpg?v=1540048552"
+	   document.getElementById("minfo").innerHTML="A Sub-Inspector sets out in pursuit of a mysterious serial killer who targets teen school girls and murders them brutally<br><br>Director: Ram Kumar<br>Writer: Ram Kumar<br>Stars: Vishnu Vishal, Radha Ravi, Sangili Murugan"
+	   document.getElementById("gal1").src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/Vishnu_Vishal.jpeg?AIAZtwqSPuHo6hAxtdxtGvl5R1.T_Dnm";
+	   document.getElementById("gal2").src="https://s01.sgp1.cdn.digitaloceanspaces.com/article/gcujyapiyp-1539335513.jpg";
+	   document.getElementById("gal3").src="https://images.newindianexpress.com/uploads/user/imagelibrary/2018/10/5/w900X450/ratsasan-.jpg";
+	   document.getElementById("gal4").src="https://i2.wp.com/www.vfxexpress.com/wp-content/uploads/2019/01/ratsasan.jpg?fit=1200%2C675&ssl=1";
+	   document.getElementById("vgal").src="https://youtube.com/embed/rThFlOjEfCo?controls=1";
+	   j=6
+	 }
+	}
+	var b=1;
+	function booking(i)
+	{
+      if(i==3)
+	   { 
+        var b=document.getElementById("bookm").value;    
+ 	    j=b;
+		movied(j);
+	   }
+	   if(i==1)
+	   {
+	    alert("Scroll Down To Continue!!");
+	    if(j==1)
+		 {
+	     document.getElementById("bookm").value="1";		 
+		 }
+		if(j==2)
+		 {
+	     document.getElementById("bookm").value="2";	
+		 }
+		if(j==3)
+		 {
+	     document.getElementById("bookm").value="3";	
+		 }
+		if(j==4)
+		 {
+	     document.getElementById("bookm").value="4";	
+		 }
+		if(j==5)
+	     {
+		 document.getElementById("bookm").value="5";	
+		 }
+		if(j==6)
+	     {
+		 document.getElementById("bookm").value="6";	
+		 }
+		 
+	   }
+       else if(i==2)
+       {
+         var nam=document.getElementById("name").value;
+         var num=document.getElementById("num").value;	
+         var mailid=document.getElementById("mail").value;
+         var dat=document.getElementById("date").value;	
+         var tic=document.getElementById("ticket").value;
+         var t=document.getElementById("time").value;
+		 var tim="";
+         if(t==9)
+          tim="9:00AM"; 
+         if(t==12)
+          tim="12:00PM"; 
+         if(t==16)
+          tim="4:00PM"; 
+         if(t==19)
+          tim="7:00PM";  
+         if(t==22)
+          tim="10:00PM"; 
+
+		  
+         if(a==1)
+         {
+		   if(document.getElementById("req").checked==true)
+		   {
+		   document.getElementById("del").src="";
+		   document.getElementById("con").innerHTML="BOOKING CONFIRMATION";
+           document.getElementById("fare").innerHTML="FARE DETAILS";
+		   document.getElementById("bdet").innerHTML="<br>SHOW DATE: "+dat+"<br>SHOW TIME: "+tim+"<br>NAME: "+nam+"<br>MOBILE NUMBER: "+num+"<br>MAIL ID: "+mailid+"<br>";
+            		   
+		   if(j==1||b==1)
+           {
+		     document.getElementById("bookin").src="https://m.media-amazon.com/images/M/MV5BZGFjOTRiYjgtYjEzMS00ZjQ2LTkzY2YtOGQ0NDI2NTVjOGFmXkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_.jpg";
+		     document.getElementById("bname").innerHTML="<span>MOVIE NAME</span> : <span>INCEPTION</span>" ;
+           } 	
+           if(j==2||b==2)
+           {
+		     document.getElementById("bookin").src="https://pics.filmaffinity.com/Interstellar-366875261-large.jpg";
+		     document.getElementById("bname").innerHTML="<span>MOVIE NAME</span> : <span>INTERSTELLAR</span>" ;
+           } 
+           if(j==3||b==3)
+           {
+		     document.getElementById("bookin").src="https://miro.medium.com/max/1200/1*--ca01rvJuqIwFAWAKoqqQ.jpeg";
+		     document.getElementById("bname").innerHTML="<span>MOVIE NAME</span> : <span>SHUTTER ISLAND</span>" ;
+           } 
+           if(j==4||b==4)
+           {
+		     document.getElementById("bookin").src="https://m.media-amazon.com/images/M/MV5BY2FiMTFmMzMtZDI2ZC00NDQyLWExYTUtOWNmZWM1ZDg5YjVjXkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_.jpg";
+		     document.getElementById("bname").innerHTML="<span>MOVIE NAME</span> : <span>VIKRAM VEDHA</span>" ;
+           } 
+ 		   if(j==5||b==5)
+           {
+		     document.getElementById("bookin").src="https://www.movienewsletters.net/photos/297465R1.jpg";
+		     document.getElementById("bname").innerHTML="<span>MOVIE NAME</span> : <span>ALA VAIKUNTAPURAMULO</span>" ;
+           } 
+           if(j==6||b==6)
+           {
+		     document.getElementById("bookin").src="https://cdn.cinematerial.com/p/297x/v4uyly0w/ratsasan-indian-movie-poster-md.jpg?v=1540048552";
+		     document.getElementById("bname").innerHTML="<span>MOVIE NAME</span> : <span>RATSASAN</span>" ;
+           } 
+		  }
+		 else
+		  {document.getElementById("req").style.borderColor="red";alert("PLEASE TICK THE BOX");}
+         }		 
+       }
+       else if(i==4&&j>0)
+       {
+	     document.getElementById("bookm").value=j;
+		 alert("PROCEED DOWN TO AVAIL TICKETS");
+       }  	   
+	}
+	
+	function foods(k)
+	{
+	  var pq=document.getElementById("01").value;
+	  var pp=document.getElementById("02").value;
+	  var bq=document.getElementById("03").value;
+	  var cq=document.getElementById("04").value;
+	  var fq=document.getElementById("05").value;
+	  var sq=document.getElementById("06").value;
+	  var tic=document.getElementById("ticket").value;
+	  var fpi=0;
+	  var fti=0;
+	  var text="";
+	  var p=0;
+	  var pa="NO"
+	  if(document.getElementById("yes").checked==true)
+	  {
+	    p=20;
+		pa="YES"
+	  }
+	  if(k==1)
+	   if(pq!=0)document.getElementById("ponum").value=pq*100; else  document.getElementById("ponum").value="";
+	  if(k==2)
+	   if(pp!=0)document.getElementById("punum").value=pp*50; else  document.getElementById("punum").value="";
+	  if(k==3) 
+	   if(bq!=0)document.getElementById("bnum").value=bq*80;  else document.getElementById("bnum").value="";
+	  if(k==4)
+	   if(cq!=0)document.getElementById("cnum").value=cq*120; else document.getElementById("cnum").value="";
+	  if(k==5)
+	   if(fq!=0)document.getElementById("fnum").value=fq*120; else document.getElementById("fnum").value="";
+	  if(k==6)
+	   if(sq!=0)document.getElementById("snum").value=sq*120; else document.getElementById("snum").value="";
+	   
+	  var tot=pq*100+pp*50+bq*80+cq*120+fq*120+sq*120+tic*200+p;
+	  var fpi=pq*100+pp*50+bq*80+cq*120+fq*120+sq*120;
+	  var fti=pq*1+pp*1+bq*1+cq*1+fq*1+sq*1;
+	  document.getElementById("ft").value=fti;
+	  document.getElementById("fp").value=fpi;
+	  if(k==7)
+	  {
+	    if(pq>0)
+		 text=text+"<br>"+"POP CORN:"+pq+"~~"+pq*100;
+		if(pp>0)
+         text=text+"<br>"+"PUFFS:"+pp+"~~"+pp*50;
+        if(bq>0)
+         text=text+"<br>"+"BHEL PURI:"+bq+"~~"+bq*80;
+        if(cq>0)
+         text=text+"<br>"+"COCA COLA:"+cq+"~~"+cq*120;
+        if(fq>0)
+         text=text+"<br>"+"FANTA:"+fq+"~~"+fq*120;
+        if(sq>0)
+         text=text+"<br>"+"SPRITE:"+sq+"~~"+sq*120;
+		text=text+"<br> PARKING: "+pa+"~~"+p; 
+        text=text+"<br> TOTAL: "+tot+"<br><br>ENJOY WATCHING!!!";  
+		text="<br> TICKETS: "+tic+"<span style=\"text-align:right\">~~"+tic*200+"</span>"+text;
+        if(a==1)
+          {if(document.getElementById("req").checked==true) 		
+             {document.getElementById("fdis").innerHTML=text;alert("BOOKING CONFIRMED!!");}}	
+        else  
+         alert("Enter Details Accordingly"); 		
+	  }
+	}
+	
+ </script>
+</head>
+<body>
+ <div id="container">
+  <div id="header">
+    <h1>CINEMA</h1>
+  </div>	
+  <div id="mcontain">
+    <br>
+    <div id="topbar">
+	 
+	</div>
+	<br>
+	<div id="main">
+	<br><br>
+	 <table>
+	 <tr>
+	  <td><img id="one" class="image" onclick="movied(1);" src="https://m.media-amazon.com/images/M/MV5BZGFjOTRiYjgtYjEzMS00ZjQ2LTkzY2YtOGQ0NDI2NTVjOGFmXkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_.jpg" /><button onclick="movied(1);booking(1)" id="button"><strong>BOOK NOW</strong></button></td>
+	  <td><p id="moviedet"></p></td><td><img id="two" class="image" onclick="movied(2);" src="https://pics.filmaffinity.com/Interstellar-366875261-large.jpg" /><button onclick="movied(2);booking(1)" id="button"><strong>BOOK NOW</strong></button></td>
+	  <td></td><td><img id="three" class="image" onclick="movied(3);" src="https://miro.medium.com/max/1200/1*--ca01rvJuqIwFAWAKoqqQ.jpeg" /><button onclick="movied(3);booking(1)" id="button"><strong>BOOK NOW</strong></button></td>
+	 </tr> 
+	 </table>
+	 <br><br>
+	 <table>
+	 <tr>
+	  <td><img id="four" class="image" onclick="movied(4);" src="https://m.media-amazon.com/images/M/MV5BY2FiMTFmMzMtZDI2ZC00NDQyLWExYTUtOWNmZWM1ZDg5YjVjXkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_.jpg" /><button onclick="movied(4);booking(1)" id="button"><strong>BOOK NOW</strong></button></td>
+	  <td></td><td><img id="five" class="image" onclick="movied(5);" src="https://www.movienewsletters.net/photos/297465R1.jpg" /><button onclick="movied(5);booking(1)" id="button"><strong>BOOK NOW</strong></button></td>
+	  <td></td><td><img id="six" class="image" onclick="movied(6);" src="https://cdn.cinematerial.com/p/297x/v4uyly0w/ratsasan-indian-movie-poster-md.jpg?v=1540048552" /><button onclick="movied(6);booking(1)" id="button"><strong>BOOK NOW</strong></button></td>
+	 </tr> 
+	 </table> 
+ 	</div>
+	<br>
+	<div id="bottom">
+	  <a href="https://www.dolby.com/"><img width="110px" src="https://www.logolynx.com/images/logolynx/5f/5fc46765567513800daff3ea7dbb585c.jpeg"/></a>
+	</div>
+  </div>
+ </div>
+ <br>
+ <br>
+ <div id="summary">
+    <div id="header">
+      <h1>CINEMA</h1>
+    </div>
+	<br>
+   <div id="mcon">	
+    <div id="leftside" style="float:left;">
+	  <div id="pic">
+       <img width="200px" id="sum" style="image-position:center" src="" />
+	  </div> 
+	</div>
+	<div id="rightside" style="float:right">
+	  <div id="moinfo">
+	   <p id="minfo"></p>
+	   <br>
+	   <h5 id="gal"></h5>
+	   <img width="100px"  id="gal1" src=""/>
+		 <img width="100px" id="gal2" src=""/>
+		  <img width="100px" id="gal3" src=""/>
+		   <img width="100px" id="gal4" src=""/>
+	  </div> 
+	  <div id="mgal">
+	     <img id="dup1" width="100px" src="https://thumbs.dreamstime.com/b/black-white-theatre-hand-written-word-text-typography-logo-icon-design-iocn-color-can-be-used-branding-card-147084531.jpg" />
+	     <h5 id="mogal"></h5>
+	     <iframe id="vgal" style="border-radius:10px;" width="250px" src=""></iframe><br><br>
+		 <button style="background-color:gray" onclick="booking(4)" id="button">BOOK NOW</button>
+	  </div>
+	</div>
+   </div>
+	<div style="clear:both" id="bottom">
+	  <a href="https://www.dolby.com/"><img width="110px" src="https://www.logolynx.com/images/logolynx/5f/5fc46765567513800daff3ea7dbb585c.jpeg"/><a/>
+	</div>
+ </div>
+ <br><br>
+    <div id="summary">
+      <div>
+     <div id="header">
+      <h1>CINEMA</h1>
+    </div>
+	<p>
+      <div id="udetail">
+	   <div id="ldet">
+	    <br><br><strong>Enter Name</strong><br>
+		<input type="text" id="name" onblur="check(1)" name="name" /><br><span style="font-size:10px;" id="m1"></span>
+		<br><br><strong>Enter Mail Id</strong><br>
+		<input type="text" id="mail" onblur="check(2)" name="mail" /><br><span style="font-size:10px;" id="m2"></span>
+		<br><br><strong>Enter Number</strong><br>
+		<input type="number" id="num" onblur="check(3)" name="mnum" /><br><span style="font-size:10px;" id="m3"></span>
+		<br><br>
+		PARKING:<input type="radio" name="park" id="yes" value="yes" checked />YES
+		<input type="radio" name="park" id="no" value="no"/>NO   <br><br>    
+        	
+	   </div>
+	   <div id="rdet">
+	     <h4 style="text-align:center">FOODS AND BEVEREGES</h4>
+		 POPCORN  <input type="text" class="numbr" id="ponum" placeholder="100/-" readonly /><input type="number" onblur="foods(1)" onclick="foods(1)" class="numb" name="food" id="01" value="0" min="0"/><br>
+         PUFFS    <input type="text" class="numbr" id="punum" placeholder="50/-" readonly /><input type="number" onblur="foods(2)" onclick="foods(2)" class="numb" name="food" id="02" value="0" min="0"/><br>
+         BHEL PURI<input type="text" class="numbr" id="bnum" placeholder="80/-" readonly /><input type="number" onblur="foods(3)" onclick="foods(3)" class="numb" name="food" id="03" value="0" min="0"/><br>		 
+	     COCA COLA<input type="text" class="numbr" id="cnum" placeholder="120/-" readonly /><input type="number" onblur="foods(4)" onclick="foods(4)" class="numb" name="food" id="04" value="0" min="0"/><br>
+         FANTA    <input type="text" class="numbr" id="fnum" placeholder="120/-" readonly /><input type="number" onblur="foods(5)" onclick="foods(5)" class="numb" name="food" id="05" value="0" min="0"/><br>
+         SPRITE   <input type="text" class="numbr" id="snum" placeholder="120/-" readonly /><input type="number" onblur="foods(6)" onclick="foods(6)" class="numb" name="food" id="06" value="0" min="0"/><br>		 
+	     TOTAL    <input type="text" class="numbr" id="fp" placeholder="" readonly /><input type="text" class="numb" name="food" id="ft" placeholder=""  readonly /><br> 
+	   </div>
+	   <div id="cen">
+	     <br><br><div><strong>Select Date</strong><strong style="padding-left:70px;">Select Time</strong><br>
+		<input style="float:left;height:16px;" type="date" id="date" name="name" />
+		<button id="sbutton" onclick="check(5)">
+		<select id="time">
+        <option value="n">~~</option>
+		<option value="9">9:00AM</option>
+	    <option value="12">12:00PM</option>
+	    <option value="16">4:00PM</option>
+	    <option value="19">7:00PM</option> 
+		<option value="22">10:00PM</option> 
+		</select>
+		</button></div><span style="clear:both;font-size:10px;" id="m5"></span>
+		<br>
+		<br><strong>Select Movie</strong><br>
+		<button id="sbutton" onclick="booking(3);check(6)"><select id="bookm">
+		<option value="0">~~</option>
+	    <option value="1">INCEPTION</option>
+	    <option value="2">INTERSTELLAR</option>
+	    <option value="3">SHUTTER ISLAND</option>
+	    <option value="4">VIKRAM VEDHA</option>
+	    <option value="5">ALA VAIKUNTAPURAMULO</option>
+	    <option value="6">RATSASAN</option>
+	    </select></button><br><span style="font-size:10px;" id="m6"></span>
+		<br><br><strong>Enter No.Of Tickets</strong><br>
+		<input type="number" class="numbn" id="ticket" onblur="check(7)" onclick="check(7)" name="ticket" min="0" max="10" placeholder=""/><span style="padding:5px;"></span><input type="text" class="numbn" id="trate" placeholder="200/-" readonly /><br><span style="font-size:10px;" id="m7"></span>
+		<br>
+       </div>
+	   <div id="base"><br>
+	    <input style="padding-bottom:40px;" type="checkbox" name="confirm" id="req"/><span style="padding-bottom:40px;">I AGREE TO ALL TERMS AND CONDITIONS</span><br> 
+        <button style="background-color:gray" onclick="booking(2);foods(7)" id="bbutton">BOOK NOW</button>		
+	   </div>
+      </div>  
+	  </p>	
+     </div>   
+    <br>
+   <div style="clear:both" id="bottom">
+	  <a href="https://www.dolby.com/"><img width="110px" src="https://www.logolynx.com/images/logolynx/5f/5fc46765567513800daff3ea7dbb585c.jpeg"/><a/>
+	</div>
+ </div>
+ <br><br>
+ <div id="summary">
+    <div id="header">
+      <h1>CINEMA</h1>
+    </div>
+	<br>
+   <div id="mcon">	
+    <div id="leftside" style="float:left;">
+	  <div id="pic">
+       <img width="200px" id="bookin" src="" />
+	  </div> 
+	</div>
+	<div id="rightside" style="float:right">
+	  <div id="moinfo">
+	  	 <img id="del" width="450px" src=""/>
+		 <h4 id="con" style="text-align:center"></h4>
+		 <p id="bname"></p>
+		 <p id="bdet"></p>
+	  </div> 
+	  <div id="mgal" style="background-image:url(https://ak.picdn.net/shutterstock/videos/1035875906/thumb/12.jpg);background-position:center;background-size:cover;background-repeat:no-repeat;">
+	      <br><h4 id="fare" style="text-align:center"></h4>
+		  <p id="fdis" style="text-align:left"></p>
+	  </div>
+	</div>
+   </div>
+	<div style="clear:both" id="bottom">
+	  <a href="https://www.dolby.com/"><img width="110px" src="https://www.logolynx.com/images/logolynx/5f/5fc46765567513800daff3ea7dbb585c.jpeg"/><a/>
+	</div>
+ </div>
+</body>
+</html>
